@@ -1,0 +1,19 @@
+mat-toolbar {
+    margin-bottom: 20px;
+    &.navbar {
+        background-color: #000;
+    }
+    span {
+        margin-left: 10px;
+    }
+    mat-icon {
+        color: red;
+    }
+}
+mat-toolbar {
+    margin-bottom: 20px;
+  }
+  
+  mat-toolbar > span {
+    margin-left: 10px;
+  }
