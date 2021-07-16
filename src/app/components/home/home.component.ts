@@ -23,6 +23,7 @@ export class HomeComponent {
   todo = getObservable(this.store.collection('todo'));
   inProgress = getObservable(this.store.collection('inProgress'));
   done = getObservable(this.store.collection('done'));
+  etnico = getObservable(this.store.collection('etnico'));
 
   constructor( private dialog: MatDialog, private store: AngularFirestore ) {}
 
@@ -45,7 +46,7 @@ drop(event: CdkDragDrop<Task[]>): void{
     )
 }
 
-edit(list: 'done' | 'todo' | 'inProgress', task: Task) : void {
+edit(list: 'done' | 'todo' | 'inProgress' | 'etnico', task: Task) : void {
   const dialogRef = this.dialog.open(TaskDialogComponent, {
     width: '270px',
     data: {
